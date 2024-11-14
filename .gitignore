@@ -1,0 +1,8 @@
+.ngx_temp/*
+!.ngx_temp/.gitkeep
+
+logs/*
+!logs/.gitkeep
+
+builds/*
+!builds/.gitkeep
