@@ -5,8 +5,8 @@
 
   cd builds/$build_id
 
-  # docker run --rm -v $(pwd):/root --user $(id -u):$(id -g) foobar:latest -linux -unpacked $build_dsp
-  docker run --rm -v $(pwd):/root --user $(id -u):$(id -g) foobar:latest -android -w64 -linux -unpacked $build_dsp 2>&1 | tee log.txt
+  # docker run --rm -v $(pwd):/root --user $(id -u):$(id -g) faust2unity:latest -linux -unpacked $build_dsp
+  docker run --rm -v $(pwd):/root --user $(id -u):$(id -g) faust2unity:latest -android -w64 -linux -unpacked $build_dsp 2>&1 | tee log.txt
 
   build_file=""
 
