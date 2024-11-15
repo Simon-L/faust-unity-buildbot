@@ -11,7 +11,7 @@ local function _StringSplit(input_str, sep)
   return t
 end
 
-function _M.UploadMedia()
+function _M.UploadDsp()
   local upload = require "resty.upload"
   local shell = require "resty.shell"
   local cjson = require "cjson"

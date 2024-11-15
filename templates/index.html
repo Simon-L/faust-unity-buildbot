@@ -1,20 +1,32 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-      <div>
-        <label for="file">Choose file to upload</label>
-        <input type="file" id="file" name="file" multiple />
-      </div>
-      <div>
-        <button>Submit</button>
-      </div>
-    </form>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <title>Faust2unity build bot</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="py-16 bg-slate-800">
+      <h1 class="mb-4 text-4xl text-center text-white font-bold font-sans">
+          Faust2unity build bot
+      </h1>
+      <div class="text-sm text-center space-y-8 text-slate-400 font-sans">
+          <h2 class="text-1xl font-bold">
+              Choose a single .dsp file to upload
+          </h2>
+          <form class="space-y-2" action="/upload" method="post" enctype="multipart/form-data">
+              <div>
+                  <label for="file"></label>
+                  <input type="file" id="file" name="file"/>
+              </div>
+              <div>
+                <button class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Submit</button>
+              </div>
+          </form>
+      </div>
   </body>
 </html>
-
